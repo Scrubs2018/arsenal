@@ -1,0 +1,309 @@
+mixin history-item
+	+b('').history-item
+		+e('').top
+			+e('span').title Заказ №45930-A12
+		+e('').content
+			+e('').info
+				+e('span').small-text Дата заказа: 23.10.2015
+				+e('span').small-text Товаров: 6
+			+e('').items
+				+e('').item
+					+e('').left
+						+e('img')(src="http://placehold.it/37x37").img
+						+e('a')(href="#").link Куртка BDU камуфляж "пустыня"
+					+e('').middle
+						+e('span').text Количество: 1
+					+e('').right
+						+e('span').text 670 000 руб.
+				+e('').item
+					+e('').left
+						+e('img')(src="http://placehold.it/37x37").img
+						+e('a')(href="#").link Куртка BDU камуфляж"пустыня"
+					+e('').middle
+						+e('span').text Количество: 1
+					+e('').right
+						+e('span').text 670 000 руб.
+		+e('').bottom
+			+e('').left
+				+b('a')(href="#").show-all Показать все 6 товаров
+			+e('').right
+				+b('sapn').price._icon 702<sup>000</sup> руб.
+
+mixin favorite-prod-item
+	+b('').prod-item
+		+e('').top
+			+e('').fave-wrap
+				+b('span').fave
+			+e('img')(src="http://placehold.it/189x189").img
+		+e('').content
+			+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+			+e('span').text Rip-stop 100% хлопок
+			+e('span').text Код Продукта: 016041A
+		+e('').bottom
+			+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+			+e('').remove-wrap
+				+b('a')(href="#").remove Удалить из избранного
+
+mixin prod-item(color)
+	+b('').prod-item
+		+e('').top
+			+e('').rate-wrap
+				+b('span').rate(class=color ? "_"+color : "_gray") 4.8
+			+e('img')(src="http://placehold.it/189x189").img
+		+e('').content
+			+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+			+e('span').text Rip-stop 100% хлопок
+			+e('span').text Код Продукта: 016041A
+		+e('').bottom
+			+b('span').price._icon(class=color ? "_icon_act" : "") 702<sup>000</sup> руб.
+
+mixin prod-item_gray
+	+b('').prod-item
+		+e('').top
+			+e('').rate-wrap
+				+b('span').rate._gray 4.8
+			+e('img')(src="http://placehold.it/189x189").img
+		+e('').content
+			+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+			+e('span').text Rip-stop 100% хлопок
+			+e('span').text Код Продукта: 016041A
+		+e('').bottom
+			+b('sapn').price._icon 702<sup>000</sup> руб.
+
+mixin prod-item_yellow
+	+b('').prod-item
+		+e('').top
+			+e('').rate-wrap
+				+b('span').rate 4.8
+			+e('img')(src="http://placehold.it/189x189").img
+		+e('').content
+			+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+			+e('span').text Rip-stop 100% хлопок
+			+e('span').text Код Продукта: 016041A
+		+e('').bottom
+			+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+
+mixin cat-sub-category-item
+	+b('').cat-sub-category-item
+		+e('').left
+			+e('').rate-wrap
+				+b('span').rate._gray 4.8
+			+e('img')(src="http://placehold.it/189x189").img
+		+e('').middle
+			+e('').top
+				+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+			+e('').content
+				+e('span').text Rip-stop 100% хлопок
+				+e('span').text Код Продукта: 016041A
+				+e('span').text Цвета: черный, олива, мультикам
+			+e('').bottom
+				+b('sapn').price._icon 810<sup>000</sup> руб.
+		+e('').right
+			+b('a')(href="#").favorite В избранное
+
+mixin cat-category-item
+	+b('').cat-category-item
+		+e('').row
+			+e('').img-wrap
+				+e('img')(src="http://placehold.it/199x199").img
+		+e('').row
+			+e('a')(href="#").title Куртки
+		+e('span').text 348 товаров
+
+mixin carousel-a
+	+b('').carousel._a.owl-carousel
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+
+mixin carousel-b
+	+b('').carousel._b.owl-carousel
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon._icon_act 702<sup>000</sup> руб.
+		+e('').item
+			+b('').prod-item
+				+e('').top
+					+e('').rate-wrap
+						+b('span').rate._gray 4.8
+					+e('img')(src="http://placehold.it/189x189").img
+				+e('').content
+					+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+					+e('span').text Rip-stop 100% хлопок
+					+e('span').text Код Продукта: 016041A
+				+e('').bottom
+					+b('sapn').price._icon 702<sup>000</sup> руб.

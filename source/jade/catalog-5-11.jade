@@ -1,0 +1,113 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+    head
+        title catalog 5.11
+        include inc/head
+    body(class="p-catalog-5-11")
+        include partials/header-5-11
+
+        .b-box.b-box_cat-5-11
+            .b-common-wrap
+                +b('section').slider.owl-carousel
+                    +e('').item
+                        +e('img')(src="http://placehold.it/1400x389").img
+                        +e('').content
+                            +e('span').title 5.11 tactical
+                            +e('span').text новое поступление мужской <br />одежды
+                            +e('a')(href="#").more Смотреть товары
+                    +e('').item
+                        +e('img')(src="http://placehold.it/1400x389").img
+                        +e('').content
+                            +e('span').title 5.11 tactical
+                            +e('span').text новое поступление мужской <br />одежды
+                            +e('a')(href="#").more Смотреть товары
+                    +e('').item
+                        +e('img')(src="http://placehold.it/1400x389").img
+                        +e('').content
+                            +e('span').title 5.11 tactical
+                            +e('span').text новое поступление мужской <br />одежды
+                            +e('a')(href="#").more Смотреть товары
+                +b('section').catalog-5-11
+                    +e('').title-wrap
+                        +e('img')(src="img/banner-5-11.png").img
+                    .b-container
+                        +e('').col-wrap
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки для мужчин
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки для женщин
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки до 1 млн руб
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Товары на скидке
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Популярные товары
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки для мужчин
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки для женщин
+                            +e('').col
+                                +e('a')(href="#").item
+                                    +e('img')(src="http://placehold.it/229x250").img
+                                    +e('span').title Подарки до 1 млн руб
+                +b('section').hit
+                    +e('').wrap
+                        +e('').left
+                            +e('span').title._orange Хит продаж
+                            +e('').content
+                                +e('span').title._md Прочные и водостойкие
+                                +e('span').title._lg Брюки taclite
+                                +e('span').title._sm БРЮКИ TACLITE бренда 5.11 tactical являются прекрасным примером удачного совмещения опрятного внешнего вида и непревзойденной прочности используемых материалов
+                                +e('').text Брюки TACLITE бренда 5.11 tactical являются прекрасным примером удачного совмещения опрятного внешнего вида и непревзойденнойпрочности используемых материалов
+                        +e('').right
+                            +e('').img-wrap
+                                +e('img')(src="img/hit-pic.png").img
+                +b('section').history
+                    +e('').wrap
+                        +e('').title-wrap
+                            +e('span').title История бренда 5.11 tactical
+                        +e('').content
+                            +e('').left
+                                +b('').video
+                            +e('').right
+                                +e('span').title._orange Мы создаём инновационные продукты для самых требовательных миссий
+                                +e('').text Брюки TACLITE бренда 5.11 tactical являются прекрасным примером удачного совмещения опрятного внешнего вида и непревзойденнойпрочности используемых материалов
+                +b('section').halva._has-border
+                    +e('').wrap
+                        +e('').left
+                            +e('img')(src="img/card-mtbank.png").img
+                        +e('').right
+                            +e('').title-wrap
+                                +e('').item
+                                    +e('span').title Мы принемаем
+                                +e('').item
+                                    img(src="img/halva.png")
+                                +e('').item
+                                    +b('a')(href="#").btn._hlv Подробнее
+                            +e('').text
+                                p С “Картой рассрочки №1 “Халва“ Вы можете приобрести любой товар в нашем магазине расплатившись за приобретенные покупки не сразу, а частями.
+                                p В магазине "Арсенал-БЛ" период рассрочки - 2 месяца.
+
+            include partials/footer
+        include inc/vendor-scripts
+        script(src="js/client.min.js")

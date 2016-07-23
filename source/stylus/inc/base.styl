@@ -1,0 +1,190 @@
+$black = #0f110f
+$white = #ffffff
+$yellow = #ffda00
+$lightGray = #9b9b9b
+$gray = #6b6b6b
+$darkGray = #4c4c4c
+
+$rootFontSize = 14px
+
+html
+    height 100%
+
+body
+    font-family 'PT Sans'
+    min-height 100%
+    position relative
+    font-size $rootFontSize
+    -webkit-text-size-adjust 100%
+    -webkit-font-size-adjust 100%
+    color $gray
+    background-color #0f110f
+    background-image url(../img/bg.png)
+    background-repeat no-repeat
+    background-position top center
+    @media (max-width 985px)
+        width 985px
+
+footer
+    position absolute
+    width 100%
+    bottom 0
+    left 0
+    height 296px
+
+img
+    display block
+
+h1, h2, h3, h4, h5
+    color $black
+    line-height 18px
+    font-weight 700
+    margin-bottom 20px
+
+h1
+    font-size 25px
+h2
+    font-size 22px
+h3
+    font-size 20px
+h4
+    font-size 18px
+h5
+    font-size 17px
+
+p
+    margin-bottom 20px
+    line-height 27px
+
+ul, ol
+    margin-bottom 20px
+    li
+        margin-bottom 10px
+        line-height 20px
+
+ul
+    list-style none
+
+i
+    font-style italic
+
+b, strong
+    font-weight 600
+
+button
+    border 0
+
+a
+    color $black
+    cursor pointer
+    &:hover
+        text-decoration: none
+
+table
+    width 100%
+    margin 10px 0
+
+th
+    text-align left
+    background-color #fafafa
+    border 1px solid #ebebeb
+    text-transform uppercase
+    font-size 16px
+    color #6d6d6d
+    padding 7px
+
+td
+    padding 16px 10px
+    border-bottom 1px solid #ebebeb
+
+.-no-border, _no-border *
+    border 0
+
+.b-input, .b-textarea
+    color $black
+    font-size 14px
+    line-height 31px
+    height 31px
+    padding 0 10px
+    border 1px solid #e2e2e2
+    width 100%
+    border-radius 3px
+    placeholder($black)
+
+.b-textarea
+    height auto
+
+.-img-left,
+.-img-right
+    margin-bottom 14px
+
+.-img-left
+    float left
+    margin-right 14px
+
+.-img-right
+    float right
+    margin-left 14px
+
+.-text-center
+    text-align center
+
+.-middle-out
+    font-size 0
+    height 100%
+    &:before
+        content ''
+        height 100%
+        display inline-block
+        vertical-align middle
+
+.-middle-in
+    display inline-block
+    vertical-align middle
+    font-size $rootFontSize
+
+.-bottom-out
+    font-size 0
+    height 100%
+    &:before
+        content ''
+        height 100%
+        display inline-block
+        vertical-align bottom
+
+.-bottom-in
+    display inline-block
+    vertical-align bottom
+    font-size $rootFontSize
+
+.b-common-wrap
+    padding-bottom 296px
+    position relative
+
+.b-container
+    min-width 985px
+    max-width (1400+120*2)px
+    padding 0 120px
+    width 100%
+    margin 0 auto
+    position relative
+    @media (max-width 1200px)
+        padding 0 15px
+
+.-hidden-desktop
+    display none !important
+    @media $max_xs
+        display block !important
+
+.-hidden-mobile
+    @media $max_xs
+        display none !important
+
+.fancybox-wrap,
+.fancybox-wrap *
+    -webkit-box-sizing content-box
+    -moz-box-sizing content-box
+    box-sizing content-box
+
+.owl-carousel .owl-item
+    -webkit-transform translateZ(0)

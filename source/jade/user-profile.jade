@@ -1,0 +1,79 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+    head
+        title user profile
+        include inc/head
+    body(class="p-user-profile")
+        include partials/header
+
+        .b-box
+            .b-common-wrap
+                +b('section').content
+                    +e('').left
+                        +b('form').filters
+                            +e('').item
+                                +b('nav').filters-menu
+                                    +e('').item._active
+                                        +e('span').link._icon._icon_profile Личные данные
+                                    +e('').item
+                                        +e('a')(href="#").link._icon._icon_favorite Избранные товары
+                                        +e('span').num 18
+                                    +e('').item
+                                        +e('a')(href="#").link._icon._icon_history История заказов
+                                        +e('span').num 20
+                    +e('').right
+                        +b('').user-profile
+                            +e('').wrap
+                                +e('').title-wrap
+                                    +b('span').title Личные данные
+                                +e('').content
+                                    +e('').item
+                                        +e('span').label Имя:
+                                        +e('span').text Александр
+                                    +e('').item
+                                        +e('span').label Контактный телефон:
+                                        +e('span').text +375 29 6003298
+                                    +e('').item
+                                        +e('span').label Email:
+                                        +e('span').text info@mail.com
+                                    +e('').item
+                                        +e('span').label Город:
+                                        +e('span').text г. Минск
+                                    +e('').item
+                                        +e('span').label Улица, дом, квартира:
+                                        +e('span').text ул. Революционная, 160-70
+                                    +e('').item
+                                        +e('span').label Почтовый индекс:
+                                        +e('span').text 220013
+                                    +e('').item
+                                        +e('span').label Способ оплаты:
+                                        +e('span').text Наличными курьеру
+                                +e('').btn-wrap
+                                    +b('a')(href="#").btn._yellow Редактировать
+
+                        +b('').user-form
+                            +e('').wrap
+                                +e('').title-wrap
+                                    +b('span').title Пароль аккаунта
+                                +e('').col-wrap
+                                    +e('').col
+                                        +e('label').item Старый пароль
+                                            +b('input')(type="text").input
+                                    +e('').col
+                                        +e('label').item Новый пароль
+                                            +b('input')(type="text").input
+                                    +e('').col
+                                        +e('label').item Повторите новый пароль
+                                            +b('input')(type="text").input
+                                    +e('').col
+                                        +b('input')(type="submit" value="Сменить пароль").btn
+
+            include partials/footer
+        include inc/vendor-scripts
+        script(src="js/client.min.js")

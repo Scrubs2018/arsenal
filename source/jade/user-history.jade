@@ -1,0 +1,63 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+    head
+        title user history
+        include inc/head
+    body(class="p-user-history")
+        include partials/header
+
+        .b-box
+            .b-common-wrap
+                +b('section').content
+                    +e('').left
+                        +b('form').filters
+                            +e('').item
+                                +b('nav').filters-menu
+                                    +e('').item
+                                        +e('span').link._icon._icon_profile Личные данные
+                                    +e('').item
+                                        +e('a')(href="#").link._icon._icon_favorite Избранные товары
+                                        +e('span').num 18
+                                    +e('').item._active
+                                        +e('a')(href="#").link._icon._icon_history История заказов
+                                        +e('span').num 20
+                    +e('').right
+                        +b('').user-histry
+                            +e('').wrap
+                                +e('').title-wrap
+                                    +b('span').title История заказов
+                                +e('').content
+                                    +e('').row
+                                        +history-item
+                                    +e('').row
+                                        +history-item
+                                    +e('').row
+                                        +history-item
+                                    +e('').row
+                                        +history-item
+                                    +e('').row
+                                        +history-item
+                                    +e('').row
+                                        +b('').pagination-box
+                                            +e('').wrap
+                                                +e('').left
+                                                    +b('a')(href="#").more-items Показать еще 10
+                                                +e('').right
+                                                    +b('').pagination
+                                                        +e('span').ctrl._prev._inactive
+                                                        +e('a')(href="#").item._active 1
+                                                        +e('a')(href="#").item 2
+                                                        +e('a')(href="#").item 3
+                                                        +e('a')(href="#").item._no-hover ...
+                                                        +e('a')(href="#").item 20
+                                                        +e('a')(href="#").ctrl._next
+
+            include partials/footer
+        include inc/vendor-scripts
+        script(src="js/client.min.js")

@@ -1,0 +1,152 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+    head
+        title brands
+        include inc/head
+    body(class="p-brands")
+        include partials/header
+
+        .b-box
+            .b-common-wrap
+                +b('section').brands
+                    .b-container
+                        +e('').wrap
+                            +e('').title-wrap
+                                +b('span').title Бренды
+                            +e('').content
+                                +e('').row
+                                    +e('').left
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title 5.11 Tactical
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                    +e('').right
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title Magnum
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                +e('').row
+                                    +e('').left
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title 5.11 Tactical
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                    +e('').right
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title Magnum
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                +e('').row
+                                    +e('').left
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title 5.11 Tactical
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                    +e('').right
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title Magnum
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                +e('').row
+                                    +e('').left
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title 5.11 Tactical
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                    +e('').right
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title Magnum
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                +e('').row
+                                    +e('').left
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title 5.11 Tactical
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+                                    +e('').right
+                                        +b('').brand
+                                            +e('').left
+                                                +e('img')(src="http://placehold.it/225x159").img
+                                            +e('').right
+                                                +e('').top
+                                                    +e('a')(href="#").title Magnum
+                                                +e('').content
+                                                    +e('span').text Страна: США
+                                                    +e('span').text Товаров в каталоге: 390
+                                                +e('').bottom
+                                                    +b('a')(href="#").btn._yellow Подробнее
+
+
+            include partials/footer
+        include inc/vendor-scripts
+        script(src="js/client.min.js")

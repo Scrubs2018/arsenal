@@ -1,0 +1,297 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title main
+		include inc/head
+	body(class="p-main")
+	include partials/header
+
+	.b-box
+		.b-common-wrap
+			+b('section').slider.owl-carousel
+				+e('').item
+					+e('img')(src="http://placehold.it/1400x389").img
+					+e('').content
+						+e('span').title 5.11 tactical
+						+e('span').text новое поступление мужской <br />одежды
+						+e('a')(href="#").more Смотреть товары
+				+e('').item
+					+e('img')(src="http://placehold.it/1400x389").img
+					+e('').content
+						+e('span').title 5.11 tactical
+						+e('span').text новое поступление мужской <br />одежды
+						+e('a')(href="#").more Смотреть товары
+				+e('').item
+					+e('img')(src="http://placehold.it/1400x389").img
+					+e('').content
+						+e('span').title 5.11 tactical
+						+e('span').text новое поступление мужской <br />одежды
+						+e('a')(href="#").more Смотреть товары
+			+b('section').other-products
+				.b-container
+					+e('').wrap
+						+e('').title-wrap
+							+b('span').title Новинки магазина
+						+b('').carousel._a.owl-carousel
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+							+e('').item
+								+prod-item
+			+b('section').popular-product
+				.b-container
+					+e('').popular-wrap
+						+e('').left
+							+e('').title-wrap._border
+								+b('span').title Популярные товары
+							+b('').carousel._c.owl-carousel
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+								+e('').item
+									+prod-item('yellow')
+						+e('').right
+							+e('').title-wrap
+								+b('span').title Контакты
+							+b('').contacts-info
+								+e('').item._address._gray
+									+e('span').label
+									+e('span').text._gray Республика Беларусь, г. Минск, ул. Притыцкого, 2/1
+								+e('').item._phone._gray
+									+e('span').label
+									+e('span').text._gray
+										a(href="tel:+375172027888") +375 17 202 78 88
+								+e('').item._mobil._gray
+									+e('span').label
+									+e('span').text._gray
+										a(href="tel:+375293195808") +375 29 319 58 08
+								+e('').item._mail._gray
+									+e('span').label
+									+e('span').text._gray <a href="http://magazin@arsenal-bl.by">magazin@arsenal-bl.by</a>, <a href="http://sergei@arsenal-bl.by">sergei@arsenal-bl.by</a>
+								+e('').item._clock._gray
+									+e('span').label
+									+e('span').text._gray Пн-Пт: 10.00-19.00, Сб: 10.00-18.00
+			+b('section').discount-product
+				.b-container
+					+e('').discount-wrap
+						+e('').left
+							+e('').title-wrap
+								+b('span').title Товары на скидке
+								+e('').btn-wrap
+									+b('a')(href="#").btn._yellow Все скидки
+							+b('').carousel._c.owl-carousel
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+								+e('').item
+									+prod-item
+						+e('').right
+							+e('').img-wrap
+								+e('img')(src="img/shop.jpg").img
+								+e('span').title Наш магазин
+								+e('a')(href="#").show Показать на карте
+			+b('section').help-in-choosing
+				.b-container
+					+e('').wrap
+						+e('').title-wrap
+							+b('span').title Помощь в выборе
+						+e('').col-wrap
+							+e('').col
+								+b('').help-item
+									+e('').row
+										+e('').img-wrap
+											+e('img')(src="http://placehold.it/300x190").img
+											+e('').title-wrap
+												+e('img')(src="img/icon-hunting.png").icon
+												+e('span').title Для охоты
+									+e('').row
+										+e('').content
+											+e('span').text 348 товаров
+											+e('span').text По цене от 670 000 руб.
+									+e('').row
+										+b('a')(href="#").btn._gray Смотреть товары
+							+e('').col
+								+b('').help-item
+									+e('').row
+										+e('').img-wrap
+											+e('img')(src="http://placehold.it/300x190").img
+											+e('').title-wrap
+												+e('img')(src="img/icon-fishing.png").icon
+												+e('span').title Для рыбалки
+									+e('').row
+										+e('').content
+											+e('span').text 348 товаров
+											+e('span').text По цене от 670 000 руб.
+									+e('').row
+										+b('a')(href="#").btn._gray Смотреть товары
+							+e('').col
+								+b('').help-item
+									+e('').row
+										+e('').img-wrap
+											+e('img')(src="http://placehold.it/300x190").img
+											+e('').title-wrap
+												+e('img')(src="img/icon-tourism.png").icon
+												+e('span').title Для туризма
+									+e('').row
+										+e('').content
+											+e('span').text 348 товаров
+											+e('span').text По цене от 670 000 руб.
+									+e('').row
+										+b('a')(href="#").btn._gray Смотреть товары
+							+e('').col
+								+b('').help-item
+									+e('').row
+										+e('').img-wrap
+											+e('img')(src="http://placehold.it/300x190").img
+											+e('').title-wrap
+												+e('img')(src="img/icon-tactics.png").icon
+												+e('span').title Для тактика
+									+e('').row
+										+e('').content
+											+e('span').text 348 товаров
+											+e('span').text По цене от 670 000 руб.
+									+e('').row
+										+b('a')(href="#").btn._gray Смотреть товары
+
+			+b('section').brans-logos
+				.b-container
+					+e('').wrap
+						+e('').title-wrap
+							+e('').item
+								+b('span').title Бренды
+							+e('').item
+								+b('a')(href="#").btn._yellow Все 38 брендов
+						+e('').col-wrap
+							+e('').col
+								+e('img')(src="img/logo-5-11.png").logo
+							+e('').col
+								+e('img')(src="img/logo-magnum.png").logo
+							+e('').col
+								+e('img')(src="img/logo-hi-tec.png").logo
+							+e('').col
+								+e('img')(src="img/logo-pyke.png").logo
+							+e('').col
+								+e('img')(src="img/logo-snugpak.png").logo
+							+e('').col
+								+e('img')(src="img/logo-mil-tec.png").logo
+							+e('').col
+								+e('img')(src="img/logo-m-tramp.png").logo
+							+e('').col
+								+e('img')(src="img/logo-gunfighter.png").logo
+
+			+b('section').halva
+				+e('').wrap
+					+e('').left
+						+e('img')(src="img/card-mtbank.png").img
+					+e('').right
+						+e('').title-wrap
+							+e('').item
+								+e('span').title Мы принемаем
+							+e('').item
+								img(src="img/halva.png")
+							+e('').item
+								+b('a')(href="#").btn._hlv Подробнее
+						+e('').text
+							p С “Картой рассрочки №1 “Халва“ Вы можете приобрести любой товар в нашем магазине расплатившись за приобретенные покупки не сразу, а частями. 
+							p В магазине "Арсенал-БЛ" период рассрочки - 2 месяца.
+
+			+b('section').about-box
+				+e('').wrap
+					+e('').left
+						+e('').title-wrap
+							+e('').item
+								+b('span').title О магазине
+							+e('').item
+								+b('a')(href="#").btn._yellow Подробнее
+						+e('').desc
+							p Наша деятельность - розничная и оптовая торговля различными товарами в стиле милитари, которые пригодятся гражданскому человеку во время отдыха на природе (одежда, обувь, рюкзаки, палатки, спальные мешки, фонари, котелки, фляги, лопатки и т.д.), и товарами милитарного стиля для военных, охотников, рыболовов, охраны, страйкбола, туристов и людей активоного образа жизни.<br> Основной акцент нашей компании это стиль MILITARY.<br> Стиль "милитари" появился и громко заявил о себе после окончания первой мировой войны. Это было вызвано рядом причин: разрушенной структурой производства гражданской одежды и, напротив, отлаженной военной; желанием военных подчеркнуть свой статус победителя и культом новой мужской красоты у подрастающего поколения; ущербностью и устарелостью разработок довоенной моды в сравнении с потрясающими эргономическими характеристиками солдатской формы.<br> В основе товаров милитарного стиля лежит использование специфических материалов, тканей, кроя, технологий проверенных временем! Наш основной акцент – надежно и практично!
+					+e('').right
+						+b('').newsletter
+							+e('').title-wrap
+								+b('span').title Рассылка новостей
+							+e('span').small-text Подпишитесь на рассылку и будьте в курсе последних скидок, распродаж и новостей магазина:
+							+b('').form-newsletter
+								+b('input')(type="text", placeholder="Введите ваш email").input
+								+e('input')(type="submit" value="").btn
+			+b('section').news-box
+				+e('').wrap
+					+e('').title-wrap
+						+e('').item
+							+b('span').title Новости магазина
+						+e('').item
+							+b('a')(href="#").btn._yellow Все новости
+					+e('').tabl-wrap
+						+e('').left
+							+b('').article
+								+e('').left
+									+e('').img-wrap
+										+e('img')(src="http://placehold.it/250x250").img
+										+e('span').date 23.09.2015
+								+e('').right
+									+e('').title-wrap
+										+b('a')(href="#").title Мы открыли новый раздел снаряжения для страйкбола
+									+e('').desc
+										p Наша деятельность - розничная и оптовая торговля различными товарами в стиле милитари, которые пригодятся гражданскому человеку во время отдыха на природе (одежда, обувь, рюкзаки, палатки, спальные мешки, фонари, котелки, фляги, лопатки и т.д.), и товарами милитарного стиля для военных, охотников, рыболовов, охраны, страйкбола, туристов и людей активоного образа жизни.
+						+e('').right
+							+b('').recent-articles
+								+e('').row
+									+e('span').date 20.08.2015
+									+e('a')(href="#").link Теперь купить товары в нашем магазине можно в рассрочку по картам “Халва”!
+								+e('').row
+									+e('span').date 16.08.2015
+									+e('a')(href="#").link Летняя распродажа женской коллекции “5.11 Tacktical”
+								+e('').row
+									+e('span').date 03.07.2015
+									+e('a')(href="#").link Новое поступление мужской одежды и снаряжения для рыбалки
+								+e('').row
+									+e('span').date 25.06.2015
+									+e('a')(href="#").link Новые способы оплаты товаров! Теперь мы принимаем ЕРИП и MasterCard!
+
+			+b('section').map
+				+e('').map-wrap
+					+e('span').title Мы на карте
+
+		include partials/footer
+	include inc/vendor-scripts
+	script(src="js/client.min.js")

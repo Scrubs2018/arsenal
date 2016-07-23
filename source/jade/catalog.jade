@@ -1,0 +1,225 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title catalog
+		include inc/head
+	body(class="p-catalog")
+		include partials/header
+
+		.b-box
+			.b-common-wrap
+				+b('section').categories-tabl
+					+e('').wrap
+						+e('').row
+							+b('').cat-block-a
+								+e('').left
+									+e('').col
+										+b('').cat-tabl-item
+											+e('').top
+												+e('img')(src="http://placehold.it/688x342").img
+											+e('').bottom
+												+e('').title-wrap
+													+e('a')(href="#").title._big 5.11 Tactical
+												+e('').content
+													+e('').row
+														+e('span').text 637 товаров
+													+e('').row
+														+e('span').text По цене от 670 000 руб.
+								+e('').right
+									+e('').half
+										+e('').col
+											+b('').cat-tabl-item
+												+e('').top
+													+e('img')(src="http://placehold.it/344x344").img
+												+e('').bottom
+													+e('').title-wrap
+														+e('a')(href="#").title Одежда
+													+e('').content
+														+e('').row
+															+e('span').text 637 товаров
+									+e('').half
+										+e('').col
+											+b('').cat-tabl-item
+												+e('').top
+													+e('img')(src="http://placehold.it/344x344").img
+												+e('').bottom
+													+e('').title-wrap
+														+e('a')(href="#").title Обувь
+													+e('').content
+														+e('').row
+															+e('span').text 637 товаров
+						+e('').row
+							+b('').cat-block-b
+								+e('').col
+									+b('').cat-tabl-item
+										+e('').top
+											+e('img')(src="http://placehold.it/341x169").img
+										+e('').bottom
+											+e('').title-wrap
+												+e('a')(href="#").title Обувь
+											+e('').content
+												+e('').row
+													+e('span').text 637 товаров
+								+e('').col
+									+b('').cat-tabl-item
+										+e('').top
+											+e('img')(src="http://placehold.it/341x169").img
+										+e('').bottom
+											+e('').title-wrap
+												+e('a')(href="#").title Обувь
+											+e('').content
+												+e('').row
+													+e('span').text 637 товаров
+								+e('').col
+									+b('').cat-tabl-item
+										+e('').top
+											+e('img')(src="http://placehold.it/341x169").img
+										+e('').bottom
+											+e('').title-wrap
+												+e('a')(href="#").title Обувь
+											+e('').content
+												+e('').row
+													+e('span').text 637 товаров
+								+e('').col
+									+b('').cat-tabl-item
+										+e('').top
+											+e('img')(src="http://placehold.it/341x169").img
+										+e('').bottom
+											+e('').title-wrap
+												+e('a')(href="#").title Обувь
+											+e('').content
+												+e('').row
+													+e('span').text 637 товаров
+				+b('section').tabs
+					+e('').wrap.js-tabs
+						.b-container
+							+e('').titles.js-tabs__titles
+								+e('a')(href="#").title.active Новинки магазина
+								+e('a')(href="#").title Товары на скидке
+								+e('a')(href="#").title Популярные товары
+							+e('').content.js-tabs__content
+								+e('').item.js-tabs__item.active
+									+carousel-a
+								+e('').item.js-tabs__item
+									+carousel-a
+								+e('').item.js-tabs__item
+									+carousel-a
+
+				+b('section').help-in-choosing
+					.b-container
+						+e('').wrap
+							+e('').title-wrap
+								+b('span').title Помощь в выборе
+							+e('').col-wrap
+								+e('').col
+									+b('').help-item
+										+e('').row
+											+e('').img-wrap
+												+e('img')(src="http://placehold.it/300x190").img
+												+e('').title-wrap
+													+e('img')(src="img/icon-hunting.png").icon
+													+e('span').title Для охоты
+										+e('').row
+											+e('').content
+												+e('span').text 348 товаров
+												+e('span').text По цене от 670 000 руб.
+										+e('').row
+											+b('a')(href="#").btn._gray Смотреть товары
+								+e('').col
+									+b('').help-item
+										+e('').row
+											+e('').img-wrap
+												+e('img')(src="http://placehold.it/300x190").img
+												+e('').title-wrap
+													+e('img')(src="img/icon-fishing.png").icon
+													+e('span').title Для рыбалки
+										+e('').row
+											+e('').content
+												+e('span').text 348 товаров
+												+e('span').text По цене от 670 000 руб.
+										+e('').row
+											+b('a')(href="#").btn._gray Смотреть товары
+								+e('').col
+									+b('').help-item
+										+e('').row
+											+e('').img-wrap
+												+e('img')(src="http://placehold.it/300x190").img
+												+e('').title-wrap
+													+e('img')(src="img/icon-tourism.png").icon
+													+e('span').title Для туризма
+										+e('').row
+											+e('').content
+												+e('span').text 348 товаров
+												+e('span').text По цене от 670 000 руб.
+										+e('').row
+											+b('a')(href="#").btn._gray Смотреть товары
+								+e('').col
+									+b('').help-item
+										+e('').row
+											+e('').img-wrap
+												+e('img')(src="http://placehold.it/300x190").img
+												+e('').title-wrap
+													+e('img')(src="img/icon-tactics.png").icon
+													+e('span').title Для тактика
+										+e('').row
+											+e('').content
+												+e('span').text 348 товаров
+												+e('span').text По цене от 670 000 руб.
+										+e('').row
+											+b('a')(href="#").btn._gray Смотреть товары
+
+				+b('section').brans-logos
+					.b-container
+						+e('').wrap
+							+e('').title-wrap
+								+e('').item
+									+b('span').title Бренды
+								+e('').item
+									+b('a')(href="#").btn._yellow Все 38 брендов
+							+e('').col-wrap
+								+e('').col
+									+e('img')(src="img/logo-5-11.png").logo
+								+e('').col
+									+e('img')(src="img/logo-magnum.png").logo
+								+e('').col
+									+e('img')(src="img/logo-hi-tec.png").logo
+								+e('').col
+									+e('img')(src="img/logo-pyke.png").logo
+								+e('').col
+									+e('img')(src="img/logo-snugpak.png").logo
+								+e('').col
+									+e('img')(src="img/logo-mil-tec.png").logo
+								+e('').col
+									+e('img')(src="img/logo-m-tramp.png").logo
+								+e('').col
+									+e('img')(src="img/logo-gunfighter.png").logo
+
+				+b('section').halva
+					+e('').wrap
+						+e('').left
+							+e('img')(src="img/card-mtbank.png").img
+						+e('').right
+							+e('').title-wrap
+								+e('').item
+									+e('span').title Мы принемаем
+								+e('').item
+									img(src="img/halva.png")
+								+e('').item
+									+b('a')(href="#").btn._hlv Подробнее
+							+e('').text
+								p С “Картой рассрочки №1 “Халва“ Вы можете приобрести любой товар в нашем магазине расплатившись за приобретенные покупки не сразу, а частями. 
+								p В магазине "Арсенал-БЛ" период рассрочки - 2 месяца.
+
+				+b('section').map
+					+e('').map-wrap
+						+e('span').title Мы на карте
+
+			include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

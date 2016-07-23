@@ -1,0 +1,2107 @@
+.b-box
+	max-width 1400px
+	width 100%
+	margin 0 auto
+	background-color $white
+	position relative
+	top 257px
+	min-height 100%
+	overflow hidden
+	&_cat-5-11
+		top 120px
+
+.b-container
+	padding 0 60px
+
+.b-header
+	position absolute
+	top 0
+	left 0
+	height 257px
+	width 100%
+	z-index 2
+	&_cat-5-11
+		height 120px
+		.b-header__wrap
+			height 120px
+	&__wrap
+		margin 0 auto
+		max-width 1400px
+		height 257px
+		position relative
+	&__contacts
+		padding 28px 140px 5px
+		text-align right
+	&__row
+		padding-bottom 14px
+	&__title
+		color $white
+		font-family 'Gotham Pro'
+		font-size 22px
+		font-weight 700
+		text-transform uppercase
+		text-shadow 1px 2px 3px rgba(0, 0, 0, 0.3)
+	&__search
+		position absolute
+		bottom 0
+		left 0
+		right 0
+
+.b-phones
+	&__row
+		padding-bottom 5px
+	&__item
+		color $yellow
+		text-decoration none
+		font-family 'Gotham Pro'
+		font-size 22px
+		font-weight 500
+		text-shadow 1px 2px 3px rgba(0, 0, 0, 0.3)
+
+.b-header-menu
+	&__wrap
+		background-color rgba(0, 0, 0, .6)
+		display table
+		width 100%
+		height 80px
+		table-layout fixed
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align middle
+	&__left
+		width 180px
+		text-align center
+	&__middle
+		text-align right
+		padding-right 10px
+	&__right
+		width 123px
+	&.sticky
+		position fixed
+		top 0
+		left 0
+		right 0
+		width 100%
+		z-index 1
+		.b-header-menu__wrap
+			margin 0 auto
+			max-width 1400px
+			min-width 985px
+
+.b-logo
+	display inline-block
+
+.b-menu
+	&__item
+		display inline-block
+		margin 0 7px
+	&__link
+		color $white
+		text-transform uppercase
+		text-decoration none
+		font-size 14px
+		font-family 'Gotham Pro'
+		font-weight 900
+		&_active, &:hover
+			color $yellow
+		&_active
+			&_orange
+				color #fa9c2a
+
+.b-top-menu-links
+	display table
+	table-layout fixed
+	width 100%
+	height 80px
+	&__item
+		display table-cell
+		text-align center
+		vertical-align middle
+		border-left 1px solid rgba(0, 0, 0, .4)
+
+.b-logout
+	display inline-block
+	sprite($s-icon-logout)
+
+.b-cart-link
+	display inline-block
+	position relative
+	sprite($s-icon-cart)
+	&__prods-in-cart
+		position absolute
+		left 0
+		right 0
+		top 27px
+		color #828282
+		font-size 13px
+		font-family 'Gotham Pro'
+		font-weight 900
+		text-decoration none
+	&_orange
+		sprite($s-icon-cart-orange)
+
+.b-search-box
+	background-color #0f110f
+
+.b-search
+	position relative
+	&__input
+		width 100%
+		border none
+		font-size 14px
+		height 40px
+		line-height 40px
+		padding 5px 69px
+		color #4b4b4b
+		placeholder(#4b4b4b)
+		background-color transparent
+	&__submit
+		position absolute
+		border none
+		top 50%
+		left 40px
+		margin-top -10px
+		background-color transparent
+		sprite($s-icon-search)
+
+.b-footer
+	&__top
+		background-color #252525
+	&__wrap
+		display table
+		width 100%
+		table-layout fixed
+		padding-top 39px
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 260px
+	&__right
+		width 306px
+	&__bottom
+		background-color #202020
+
+.b-text
+	&__wrap
+		padding 35px 0 40px
+	&__title-wrap
+		padding-bottom 10px
+
+.b-title
+	font-size 22px
+	font-family 'Gotham Pro'
+	font-weight 500
+	line-height 25px
+	display block
+	color $black
+	text-decoration none
+
+.b-footer-left
+	&__row
+		padding-bottom 20px
+
+.b-social-ftr
+	&__item
+		display inline-block
+		vertical-align middle
+		margin-right 10px
+
+.b-copyright
+	color $darkGray
+	font-size 13px
+	a
+		color #8e8e8e
+
+.b-footer-middle
+	&__col-wrap
+		display table
+		table-layout fixed
+		width 100%
+	&__col
+		font-size 15px
+		display table-cell
+		vertical-align top
+		text-align left
+		padding-right 60px
+
+.b-footer-bottom
+	display table
+	width 100%
+	table-layout fixed
+	height 58px
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+
+.b-footer-data-text
+	color #373737
+
+.b-widget
+	&__title
+		display block
+		text-transform uppercase
+		font-family 'Gotham Pro'
+		font-weight 500
+		color #8e8e8e
+		border-bottom 1px solid #373737
+		margin-bottom 10px
+		padding-bottom 10px
+	&__item
+		display block
+		padding-bottom 3px
+	&__link
+		text-decoration none
+		color $darkGray
+		font-size 13px
+		&:hover
+			text-decoration underline
+
+.b-contacts-ftr
+	&__row
+		display block
+		padding-bottom 3px
+	&__item
+		color #8e8e8e
+		position relative
+		padding-left 25px
+		line-height 19px
+		display inline-block
+		&_point,
+		&_phone,
+		&_mobil,
+		&_mail,
+		&_clock
+			&:before
+				content ''
+				position absolute
+				display block
+		&_point
+			&:before
+				sprite($s-icon-point)
+				top 2px
+				left 0
+		&_phone
+			&:before
+				sprite($s-icon-phone)
+				top 2px
+				left 0
+		&_mobil
+			&:before
+				sprite($s-icon-mobil)
+				top 2px
+				left 4px
+		&_mail
+			&:before
+				sprite($s-icon-mail)
+				top 5px
+				left 2px
+		&_clock
+			&:before
+				sprite($s-icon-clock)
+				top 0
+				left 3px
+		a
+			display inline-block
+			color #8e8e8e
+
+.b-swd
+	sprite($s-swd)
+	margin-left auto
+	display block
+
+.b-discount-product
+	&__discount-wrap
+		padding-bottom 60px
+		display table
+		width 100%
+		table-layout fixed
+	&__btn-wrap
+		position absolute
+		top -1px
+		left 280px
+	&__title-wrap
+		padding-bottom 40px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		padding-right 60px
+	&__right
+		width 400px
+	&__img-wrap
+		position relative
+	&__img
+		width 100%
+		height auto
+	&__title
+		position absolute
+		top 0
+		left 0
+		padding 25px
+		font-size 22px
+		color #ffda00
+		font-weight 500
+	&__show
+		text-decoration none
+		padding-top 33px
+		padding-right 33px
+		position absolute
+		top 0
+		right 0
+		color #fff
+		font-size 11px
+		text-transform uppercase
+		font-family Gotham Pro
+		font-weight 700
+		&:before
+			content ''
+			position absolute
+			top 30px
+			left -20px
+			sprite($s-maps)
+
+.b-help-in-choosing
+	background-color #f3f3f3
+	&_indented
+		.b-help-in-choosing__wrap
+			padding 54px 30px 37px
+	&__wrap
+		padding 54px 0 37px
+	&__col-wrap
+		font-size 0
+		margin 0 -13px
+		padding-top 10px
+	&__col
+		font-size 15px
+		padding 10px 13px
+		width (100/4)%
+		display inline-block
+		vertical-align top
+
+.b-help-item
+	&__row
+		padding-bottom 12px
+	&__img-wrap
+		position relative
+	&__title-wrap
+		position absolute
+		top 29%
+		left 0
+		right 0
+		text-align center
+	&__icon
+		display inline-block
+	&__title
+		display block
+		color $white
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+		text-transform uppercase
+		line-height 39px
+	&__img
+		width 100%
+		height auto
+	&__text
+		color $lightGray
+		font-size 14px
+		display block
+		padding-bottom 3px
+
+.b-brans-logos
+	&__wrap
+		padding 50px 0 32px
+	&__item
+		display inline-block
+		vertical-align middle
+		margin 0 7px
+		&:first-child
+			margin-left 0
+	&__col-wrap
+		display table
+		width 100%
+		table-layout fixed
+		padding 33px 0
+	&__col
+		display table-cell
+		vertical-align top
+		text-align center
+	&__logo
+		max-width 100%
+		display inline-block
+
+.b-halva
+	background-image url(../img/bg-halva.png)
+	background-repeat repeat-x
+	background-position left bottom
+	border-top 3px solid #f79125
+	&__wrap
+		min-height 120px
+		display table
+		width 100%
+		table-layout fixed
+		padding 0 43px
+	&__left, &__right
+		display table-cell
+		vertical-align bottom
+		position relative
+	&__left
+		width 270px
+	&__img
+		position absolute
+		left 0
+		bottom 0
+	&__item
+		display inline-block
+		vertical-align middle
+		margin-right 15px
+	&__title-wrap
+		padding-bottom 5px
+	&__title
+		text-transform uppercase
+		color $white
+		font-family 'Gotham Pro'
+		font-size 22px
+		font-weight 900
+	&__text
+		padding-bottom 25px
+		p
+			margin 0
+			line-height 18px
+			color $white
+
+.b-map
+	background-color #CCC
+	position relative
+	width 100%
+	height 365px
+	&__map-wrap
+		width 100%
+		height 100%
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8c8984+0,e5e5e5+63 */
+		background: #8c8984; /* Old browsers */
+		background: -moz-linear-gradient(top, #8c8984 0%, #e5e5e5 63%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #8c8984 0%,#e5e5e5 63%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #8c8984 0%,#e5e5e5 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	&__title
+		position absolute
+		top 55px
+		left 60px
+		text-transform uppercase
+		color $white
+		font-family 'Gotham Pro'
+		font-size 22px
+		font-weight 500
+		text-shadow 0px 1px 0px rgba(0, 0, 0, 0.4)
+
+.b-categories-tabl
+	&__wrap
+		padding 6px 3px 20px
+	&__row
+		padding-bottom 6px
+
+.b-cat-block-a
+	font-size 0
+	&__left, &__right
+		display inline-block
+		vertical-align top
+		width (100/2)%
+		font-size 14px
+	&__right
+		font-size 0
+	&__half
+		display inline-block
+		vertical-align top
+		width (100/2)%
+		font-size 14px
+	&__col
+		padding 0 3px
+
+.b-cat-block-b
+	font-size 0
+	&__col
+		display inline-block
+		vertical-align top
+		width (100/4)%
+		padding 0 3px
+
+.b-cat-tabl-item
+	font-size 14px
+	position relative
+	&__bottom
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		background-color #f3f3f3
+		padding 15px 20px 17px
+	&__img
+		width 100%
+		height auto
+	&__title-wrap
+		padding-bottom 5px
+	&__title
+		color $black
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+		text-decoration none
+		&_big
+			font-size 22px
+	&__row
+		padding-bottom 2px
+
+.b-tabs
+	&__wrap
+		padding-top 20px
+		padding-bottom 56px
+	&__title
+		color $lightGray
+		font-size 22px
+		font-family 'Gotham Pro'
+		font-weight 500
+		text-decoration none
+		margin-right 25px
+		&:hover, &.active
+			color $black
+	&__titles
+		padding-bottom 10px
+	&__content
+		padding-top 20px
+
+.b-carousel
+	position relative
+	.owl-item
+		position relative
+		&:after
+			content ''
+			position absolute
+			height 100%
+			width 1px
+			right -20px
+			top 0
+			background-color #e5e5e5
+		&:last-child
+			&:after
+				display none
+	.owl-nav
+		position absolute
+		top -65px
+		right 0
+		text-align right
+		.owl-prev, .owl-next
+			width 30px
+			height 30px
+			position relative
+			display inline-block
+			border 1px solid #e5e5e5
+		.owl-prev, .owl-next
+			&:after
+				content ""
+				position absolute
+				top 50%
+				left 50%
+				z-index 1
+			&.disabled
+				opacity 0.6
+				cursor default
+		.owl-prev
+			border-right none
+			&:after
+				sprite($s-arr-carousel-l)
+				margin -8px -7px
+		.owl-next
+			&:after
+				sprite($s-arr-carousel-r)
+				margin -8px -4px
+
+.b-prod-item
+	position relative
+	width 100%
+	height auto
+	&__content
+		padding-bottom 8px
+	&__top
+		padding-bottom 20px
+	&__rate-wrap, &__fave-wrap
+		position absolute
+		top 0
+		left 0
+		z-index 1
+	&__title
+		color $black
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+		text-decoration none
+		line-height 18px
+		padding-bottom 16px
+		display block
+	&__text
+		color $lightGray
+		font-size 14px
+		display block
+		padding-bottom 3px
+	&__remove-wrap
+		padding-top 10px
+	&__bottom
+		padding-top 13px
+
+.b-rate
+	position relative
+	color $black
+	font-size 12px
+	font-family 'Gotham Pro'
+	font-weight 900
+	text-align center
+	background-color $yellow
+	padding 4px 4px 15px
+	z-index 0
+	&:before, &:after
+		content ''
+		position absolute
+	&:before
+		bottom 1px
+		left 0
+		right 0
+		display inline-block
+		margin 0 auto
+		sprite($s-star-empty)
+	&:after
+		top 100%
+		left 0
+		right 0
+		border-top 4px solid $yellow
+		border-right 12px solid transparent
+		border-bottom 4px solid transparent
+		border-left 12px solid transparent
+	&_gray
+		background-color #e5e5e5
+		&:after
+			border-top 4px solid #e5e5e5
+	&_yellow
+		background-color $yellow
+		&:after
+			border-top 4px solid $yellow
+
+.b-fave
+	position relative
+	background-color $yellow
+	padding 4px 4px 15px
+	z-index 0
+	display block
+	width 24px
+	&:before, &:after
+		content ''
+		position absolute
+	&:before
+		bottom 1px
+		left 0
+		right 0
+		display inline-block
+		margin 0 auto
+		sprite($s-favorite-act)
+	&:after
+		top 100%
+		left 0
+		right 0
+		border-top 4px solid $yellow
+		border-right 12px solid transparent
+		border-bottom 4px solid transparent
+		border-left 12px solid transparent
+
+.b-content
+	display table
+	table-layout fixed
+	width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 260px
+		border-right 1px solid #e5e5e5
+
+.b-filters
+	&__item
+		border-bottom 1px solid #e5e5e5
+		&:last-child
+			border none
+
+.b-filters-menu
+	&__link, &__num
+		display table-cell
+		vertical-align bottom
+	&__link
+		text-decoration none
+		font-size 15px
+		font-family 'Gotham Pro'
+		font-weight 500
+		color $gray
+		width 100%
+		&_icon
+			position relative
+			padding-left 20px
+			&_profile,
+			&_favorite,
+			&_history
+				&:before
+					content ''
+					position absolute
+					top 50%
+					left 0
+					margin-top -8px
+			&_profile
+				&:before
+					sprite($s-user-profile)
+			&_favorite
+				&:before
+					sprite($s-user-favorite)
+			&_history
+				&:before
+					sprite($s-user-history)
+	&__num
+		font-size 11px
+		font-family 'Gotham Pro'
+		font-weight 400
+		color #b8b8b8
+		width 13%
+		text-align right
+	&__item
+		display table
+		table-layout fixed
+		width 100%
+		padding 6px 23px
+		&:first-child
+			margin-top 0
+			padding-top 20px
+		&:last-child
+			margin-bottom 0
+			padding-bottom 23px
+		&_active
+			background-color $yellow
+			padding 0 23px
+			line-height 56px
+			height 56px
+			position relative
+			margin 7px 0
+			.b-filters-menu__link_icon_profile
+				&:before
+					sprite($s-user-profile-act)
+			.b-filters-menu__link_icon_favorite
+				&:before
+					sprite($s-user-favorite-act)
+			.b-filters-menu__link_icon_history
+				&:before
+					sprite($s-user-history-act)
+			.b-filters-menu__link, .b-filters-menu__num
+				color $black
+			&:first-child
+				padding-top 0
+			&:last-child
+				padding-bottom 0
+			&:before
+				content ''
+				display block
+				position absolute
+				top 0
+				left 100%
+				border-top 28px solid transparent
+				border-right 10px solid transparent
+				border-bottom 28px solid transparent
+				border-left 10px solid $yellow
+		&_active-a
+			background-color #e5e5e5
+			padding 0 23px
+			line-height 56px
+			height 56px
+			position relative
+			margin 7px 0
+			.b-filters-menu__link_icon_profile
+				&:before
+					sprite($s-user-profile-act)
+			.b-filters-menu__link_icon_favorite
+				&:before
+					sprite($s-user-favorite-act)
+			.b-filters-menu__link_icon_history
+				&:before
+					sprite($s-user-history-act)
+			.b-filters-menu__link, .b-filters-menu__num
+				color #b8b8b8
+			&:first-child
+				padding-top 0
+			&:last-child
+				padding-bottom 0
+			&:before
+				content ''
+				display block
+				position absolute
+				top 0
+				left 100%
+				border-top 28px solid transparent
+				border-right 10px solid transparent
+				border-bottom 28px solid transparent
+				border-left 10px solid #e5e5e5
+
+.b-filters-menu-a
+	&__link, &__num
+		display table-cell
+		vertical-align bottom
+		&:hover
+			color #0f110f
+	&__link
+		text-decoration none
+		font-size 13px
+		font-family 'Gotham Pro'
+		font-weight 500
+		color $gray
+		width 100%
+		&_active
+			color #0f110f
+	&__num
+		font-size 11px
+		font-family 'Gotham Pro'
+		font-weight 400
+		color #b8b8b8
+		width 13%
+		text-align right
+	&__item
+		display table
+		table-layout fixed
+		width 100%
+		padding-left 20px
+		padding-bottom 15px
+		&:first-child
+			margin-top 0
+			padding-top 10px
+		&:last-child
+			margin-bottom 0
+			padding-bottom 10px
+
+.b-cat-category
+	&__wrap
+		padding 0 30px 37px
+	&__title-wrap
+		padding 15px 0
+	&__col-wrap
+		font-size 0
+		margin 0 -10px
+	&__col
+		font-size 14px
+		padding 0 10px 20px
+		width (100/4)%
+		display inline-block
+		vertical-align top
+
+.b-popular-product
+	&__title-wrap
+		&_border
+			padding-bottom 20px
+			margin-bottom 20px
+			border-bottom 1px solid #e5e5e5
+	&__popular-wrap
+		padding-top 50px
+		padding-bottom 70px
+		display table
+		width 100%
+		table-layout fixed
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		padding-right 60px
+	&__right
+		width 400px
+
+.b-cat-category-item
+	border 1px solid #e5e5e5
+	padding 0 27px 15px
+	&__img-wrap
+		text-align center
+	&__img
+		display inline-block
+		width 100%
+		height auto
+	&__row
+		padding-bottom 4px
+	&__title
+		color $black
+		font-size 15px
+		font-family 'Gotham Pro'
+		font-weight 500
+		text-decoration none
+	&__text
+		color $lightGray
+		font-size 14px
+
+.b-bottom-text
+	border-top 1px solid #e5e5e5
+	&_no-border
+		border none
+		.b-bottom-text__wrap
+			padding-top 20px
+	&__wrap
+		padding 54px 30px 33px
+	&__title-wrap
+		padding-bottom 25px
+	&__text
+		p
+			font-size 14px
+			color $gray
+			line-height 22px
+
+.b-cat-sub-category
+	&__wrap
+		padding 0 30px
+	&__row
+		padding-bottom 23px
+
+.b-title-box
+	display table
+	table-layout fixed
+	width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__right
+		text-align right
+	&__title-wrap
+		padding 15px 0
+
+.b-sorting
+	&__item
+		display inline-block
+		margin-left 14px
+	&__sort
+		opacity 0.5
+		text-decoration none
+		padding-right 14px
+		position relative
+		font-family 'Gotham Pro'
+		font-size 13px
+		&_active
+			opacity 1
+		&:after
+			content ""
+			position absolute
+			top 50%
+			right 0
+			margin-top -2px
+			border-top 4px solid $black
+			border-right 4px solid transparent
+			border-bottom 4px solid transparent
+			border-left 4px solid transparent
+
+.b-cat-sub-category-item
+	display table
+	table-layout fixed
+	width 100%
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 189px
+		position relative
+	&__rate-wrap
+		position absolute
+		top 1px
+		left 0
+		z-index 0
+	&__middle
+		padding 0 20px
+	&__right
+		width 200px
+		text-align right
+	&__top
+		padding-bottom 6px
+	&__content
+		padding-bottom 11px
+	&__title
+		text-decoration none
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+	&__text
+		display block
+		line-height 18px
+	&__old-price
+		color #9b9b9b
+		display block
+		margin-top 10px
+		font-size 16px
+		text-decoration line-through
+	&__hit-wrap
+		margin-top 10px
+
+.b-discount
+	font-size 10px
+	text-transform uppercase
+	color #0f110f
+	font-family 'Gotham Pro'
+	font-weight 500
+	border 1px solid #ffda00
+	padding 4px 3px
+
+.b-favorite
+	text-decoration none
+	position relative
+	color $black
+	font-size 13px
+	font-family 'Gotham Pro'
+	opacity 0.5
+	padding-right 20px
+	&:after
+		content ""
+		position absolute
+		top 50%
+		right 0
+		margin-top -8px
+		sprite($s-favorite)
+	&_active
+		opacity 1
+		&:after
+			sprite($s-favorite-act)
+
+.b-pagination-box
+	border-top 1px solid #e5e5e5
+	&__wrap
+		padding-top 24px
+		padding-bottom 30px
+		display table
+		table-layout fixed
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__right
+		text-align right
+
+.b-more-items
+	text-decoration none
+	text-transform uppercase
+	color #888888
+	font-size 12px
+	font-family 'Gotham Pro'
+	font-weight 700
+	border 1px solid #e5e5e5
+	border-radius 3px
+	padding 0 29px 0 10px
+	line-height 31px
+	height 31px
+	position relative
+	display inline-block
+	&:after
+		content ""
+		position absolute
+		top 50%
+		right 10px
+		margin-top -3px
+		sprite($s-arr-more-b)
+
+.b-pagination
+	font-family 'Gotham Pro'
+	font-weight 700
+	user-select none
+	font-size 0
+	border 1px solid #e5e5e5
+	border-radius 4px
+	display inline-block
+	&__item
+		font-size 12px
+		background-color #fff
+		color #888888
+		display inline-block
+		vertical-align middle
+		line-height 29px
+		min-width 29px
+		height 29px
+		text-align center
+		text-decoration none
+		transition all .2s ease-out
+		border-right 1px solid #e5e5e5
+		&_active, &:hover
+			background-color $yellow
+			color $black
+		&:last-child
+			border none
+	&__ctrl
+		color $yellow
+		text-decoration none
+		display inline-block
+		width 29px
+		height 29px
+		vertical-align middle
+		position relative
+		&:after
+			content ""
+			position absolute
+			top 50%
+			margin-top -6px
+		&_prev
+			&:after
+				left 10px
+				sprite($s-arr-pagination-l)
+		&_next
+			&:after
+				left 11px
+				sprite($s-arr-pagination-r)
+		&_inactive
+			opacity .4
+			cursor not-allowed
+
+.b-product
+	&__wrap
+		padding 0 30px 13px
+	&__top
+		display table
+		table-layout fixed
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		padding-left 20px
+	&__row
+		padding 10px 0
+		border-top 1px solid #e5e5e5
+		&:first-child
+			padding-top 0
+			border none
+		&:last-child
+			padding-bottom 0
+	&__desc
+		p
+			line-height 18px
+
+.b-product-info
+	display table
+	table-layout fixed
+	width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		width 190px
+		text-align right
+	&__row
+		padding-bottom 12px
+		&:last-child
+			padding-bottom 0
+
+.b-specifications
+	&__item
+		padding-bottom 3px
+	&__label
+		color #9b9b9b
+		font-size 14px
+		margin-right 3px
+	&__text
+		color $black
+		font-size 14px
+
+.b-back-link
+	text-decoration none
+	position relative
+	padding-left 15px
+	font-size 13px
+	font-family 'Gotham Pro'
+	color #b8b8b8
+	&:before
+		content ""
+		position absolute
+		top 50%
+		left 0
+		margin-top -5px
+		border-top 4px solid transparent
+		border-right 4px solid #b8b8b8
+		border-bottom 4px solid transparent
+		border-left 4px solid transparent
+
+.b-product-foto
+	&__wrap
+		border-top 1px solid #e5e5e5
+		padding 25px 30px
+	&__title-wrap
+		padding-bottom 10px
+
+.b-comments
+	&__wrap
+		border-top 1px solid #e5e5e5
+		padding 20px 30px
+	&__title-wrap
+		padding-bottom 10px
+	&__item
+		display inline-block
+		vertical-align middle
+		margin 0 7px
+		&:first-child
+			margin-left 0
+	&__row
+		padding-bottom 10px
+		&:last-child
+			padding-bottom 0
+
+.b-comment
+	&__head
+		display table
+		table-layout fixed
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__left
+		width 40px
+	&__right
+		padding-left 10px
+	&__author, &__date
+		display block
+		padding-bottom 2px
+	&__author
+		color $black
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 700
+		text-transform uppercase
+	&__date
+		color $lightGray
+		font-size 12px
+	&__text
+		padding-top 10px
+		p
+			line-height 18px
+
+.b-other-products
+	border-bottom 1px solid #e5e5e5
+	&__wrap
+		border-top 1px solid #e5e5e5
+		padding-top 50px
+		padding-bottom 60px
+	&__title-wrap
+		padding-bottom 37px
+
+.b-rate-widget
+	display table
+	table-layout fixed
+	width 270px
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__left
+		background-color #ededed
+		width 180px
+		padding-left 10px
+		position relative
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 100%
+			border-top 12px solid transparent
+			border-right 4px solid transparent
+			border-bottom 12px solid transparent
+			border-left 4px solid #ededed
+	&__right
+		background-color $yellow
+		width 70px
+		text-align center
+		padding-left 3px
+	&__label, &__stars, &__sum
+		display inline-block
+		vertical-align bottom
+	&__stars
+		padding 0 5px
+	&__label
+		color $black
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 400
+		text-transform uppercase
+	&__sum
+		color $black
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 900
+	&__btn
+		color $black
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 400
+		text-decoration none
+		line-height 28px
+		height 28px
+	&__star
+		margin 0 1px
+		display inline-block
+		vertical-align bottom
+		sprite($s-star)
+		&_act
+			sprite($s-star-full)
+		&_half
+			sprite($s-star-half)
+
+.b-brands
+	&__wrap
+		padding 43px 0 32px
+	&__title-wrap
+		padding-bottom 3px
+	&__row
+		border-bottom 1px solid #e5e5e5
+		padding 30px 0
+		display table
+		table-layout fixed
+		width 100%
+		&:last-child
+			border none
+	&__left, &__right
+		display table-cell
+		vertical-align top
+
+.b-brand
+	display table
+	width 100%
+	table-layout fixed
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 225px
+	&__right
+		padding-left 30px
+	&__top
+		padding-bottom 7px
+	&__content
+		padding-bottom 14px
+	&__title
+		text-decoration none
+		color $black
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+	&__text
+		display block
+		color $lightGray
+		padding-bottom 3px
+		font-size 14px
+
+.b-articles
+	&__wrap
+		padding 43px 0 0
+	&__title-wrap
+		padding-bottom 3px
+	&__row
+		border-bottom 1px solid #e5e5e5
+		padding 30px 0
+		display table
+		table-layout fixed
+		width 100%
+		&:last-child
+			border none
+
+.b-article
+	display table
+	width 100%
+	table-layout fixed
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 250px
+	&__img-wrap
+		position relative
+	&__right
+		padding-left 24px
+	&__date
+		position absolute
+		bottom 20px
+		left 20px
+		padding-left 25px
+		color $white
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 500
+		text-shadow 0px 1px 0px rgba(0, 0, 0, 0.4)
+		&:before
+			content ''
+			position absolute
+			top 50%
+			left 0
+			margin-top -11px
+			sprite($s-calendar)
+	&__title-wrap
+		padding-top 15px
+		padding-bottom 10px
+	&__desc
+		p
+			line-height 22px
+
+.b-contacts
+	&__wrap
+		display table
+		width 100%
+		table-layout fixed
+		padding 43px 0 60px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__title-wrap
+		padding-bottom 10px
+
+.b-contacts-info
+	padding-top 22px
+	&__item
+		position relative
+		padding-left 27px
+		padding-bottom 18px
+		&_gray
+			border-bottom 1px solid #e5e5e5
+			padding-bottom 20px
+			margin-bottom 20px
+			&:first-child
+				border-top 1px solid #e5e5e5
+				padding-top 20px
+		&_address, &_phone, &_mobil, &_mail, &_clock
+			&:before
+				content ''
+				position absolute
+				display block
+		&_address
+			&:before
+				sprite($s-icon-point-black)
+				top 21px
+				left 0
+		&_phone
+			&:before
+				sprite($s-icon-phone-black)
+				top 4px
+				left 0
+		&_mobil
+			&:before
+				sprite($s-icon-mobil-black)
+				top 4px
+				left 4px
+		&_mail
+			&:before
+				sprite($s-icon-mail-black)
+				top 5px
+				left 1px
+		&_clock
+			&:before
+				sprite($s-icon-clock-black)
+				top 3px
+				left 3px
+	&__label, &__text
+		display block
+	&__label
+		padding-bottom 3px
+		font-size 12px
+		color $lightGray
+		text-transform uppercase
+	&__text
+		color $black
+		font-size 15px
+		font-family 'Gotham Pro'
+		font-weight 500
+		a
+			text-decoration none
+		&_gray
+			font-size 13px
+			color #9b9b9b
+			a
+				font-size 14px
+				color #9b9b9b
+
+.b-form-contact
+	max-width 483px
+	&__top
+		padding-bottom 10px
+	&__content
+		padding-top 16px
+		padding-bottom 36px
+	&__row
+		padding-bottom 5px
+	&__item
+		line-height 27px
+
+.b-our-store
+	border-top 1px solid #e5e5e5
+	&__wrap
+		padding 53px 0
+	&__title-wrap
+		padding-bottom 18px
+	&__col-wrap
+		font-size 0
+		margin 0 -10px
+	&__col
+		font-size 15px
+		padding 0 10px
+		width (100/4)%
+		display inline-block
+		vertical-align top
+	&__img
+		width 100%
+		height auto
+
+.b-slider
+	&__item
+		position relative
+	&__content
+		position absolute
+		top 80px
+		right 60px
+		text-align right
+	&__title
+		display block
+		color $yellow
+		font-size 40px
+		font-family 'Gotham Pro'
+		font-weight 700
+		text-transform uppercase
+		padding-bottom 14px
+	&__text
+		text-transform uppercase
+		color $white
+		font-size 23px
+		font-family 'Gotham Pro'
+		font-weight 700
+		display block
+		padding-bottom 14px
+		line-height 26px
+	&__more
+		display inline-block
+		text-decoration none
+		text-transform uppercase
+		color rgba(255, 255, 255, 0.45);
+		font-size 12px
+		font-family 'Gotham Pro'
+		font-weight 700
+		position relative
+		padding-right 13px
+		&:after
+			content ''
+			position absolute
+			top 50%
+			right 0
+			margin-top -7px
+			sprite($s-arr-slider-r-sm)
+	.owl-dots
+		position absolute
+		bottom 70px
+		right 140px
+		.owl-dot
+			display inline-block
+			margin 0 4px
+			span
+				display block
+				sprite($s-slider-dot)
+			&.active
+				span
+					sprite($s-slider-dot-act)
+	.owl-nav
+		position absolute
+		bottom 60px
+		right 61px
+		z-index 1
+		.owl-prev, .owl-next
+			background-color rgba(0,0,0,.3)
+			display inline-block
+			position relative
+			width 29px
+			height 29px
+			&:after
+				content ''
+				position absolute
+				top 50%
+				left 9px
+				margin-top -9px
+		.owl-prev
+			border-radius 4px 0 0 4px
+			margin-right 2px
+			&:after
+				sprite($s-arr-slider-l)
+		.owl-next
+			border-radius 0 4px 4px 0
+			&:after
+				sprite($s-arr-slider-r)
+
+.b-catalog-5-11
+	&__col-wrap
+		font-size 0
+		margin 0 -15px
+		padding 29px 0 37px
+	&__col
+		font-size 15px
+		padding 0 15px 30px
+		width (100/5)%
+		display inline-block
+		vertical-align top
+	&__item
+		position relative
+		display block
+	&__title
+		position absolute
+		left 18px
+		right 18px
+		bottom 12px
+		color $white
+		font-size 28px
+		line-height 29px
+		font-family 'PFD in Text Pro'
+		font-weight 500
+		font-style italic
+		text-transform uppercase
+		text-shadow 0px 1px 0px rgba(0, 0, 0, 0.35)
+		z-index 1
+
+.b-hit
+	border-top 1px solid #000
+	&__wrap
+		padding 0 207px
+		display table
+		table-layout fixed
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		width 261px
+		font-size 0
+		min-height 340px
+		vertical-align middle
+		&:before
+			content ''
+			min-height 340px
+			display inline-block
+			vertical-align middle
+	&__img-wrap
+		display inline-block
+		vertical-align middle
+	&__title
+		display block
+		font-family 'PFD in Text Pro'
+		font-weight 700
+		font-style italic
+		text-transform uppercase
+		&_lg
+			color $black
+			font-size 60px
+			padding-bottom 6px
+		&_md
+			color $black
+			font-size 36px
+			padding-bottom 11px
+		&_sm
+			color $gray
+			font-size 20px
+			line-height 24px
+			padding-bottom 11px
+		&_orange
+			background-color #f79125
+			text-transform uppercase
+			color $black
+			font-size 30px
+			font-style normal
+			font-family 'PFD in Text Pro'
+			font-weight 500
+			display inline-block
+			height 47px
+			line-height 47px
+			padding 0 17px 0 23px
+			position relative
+			&:after
+				content ''
+				position absolute
+				top 0
+				left 100%
+				display block
+				width 38px
+				height 47px
+				background-image url(../img/bg-hit.png)
+				background-position top left
+				background-repeat no-repeat
+	&__content
+		padding-top 27px
+		padding-left 23px
+	&__text
+		color $gray
+		font-size 14px
+		font-family 'Gotham Pro'
+		font-weight 500
+		line-height 17px
+
+.b-history
+	background-color #212121
+	&__wrap
+		padding 30px 207px 32px
+	&__title-wrap
+		text-align center
+		padding 15px 0 25px
+	&__title
+		color $white
+		font-size 30px
+		font-style italic
+		font-family 'PFD in Text Pro'
+		font-weight 500
+		text-transform uppercase
+		position relative
+		&:after
+			content ''
+			position absolute
+			width 62px
+			height 3px
+			background-color #f79125
+			bottom -5px
+			left 50%
+			margin-left -31px
+		&_orange
+			color #f79125
+			font-size 36px
+			font-weight 700
+			padding 20px 0 11px
+			display block
+			&:after
+				display none
+	&__content
+		display table
+		table-layout fixed
+		width 100%
+		padding 10px 0
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 476px
+	&__right
+		padding-left 30px
+	&__text
+		color $gray
+		font-size 14px
+		font-family 'Gotham Pro'
+		font-weight 500
+		line-height 16px
+
+.b-video
+	background-color #CCC
+	display block
+	width 476px
+	height 265px
+
+.b-user-profile
+	&__wrap
+		padding 0 30px 10px
+	&__title-wrap
+		padding 15px 0
+	&__content
+		padding-bottom 5px
+	&__item
+		padding-bottom 4px
+	&__label
+		display inline-block
+		width 160px
+		color $lightGray
+	&__text
+		color $black
+		font-family 'Gotham Pro'
+		font-weight 500
+
+.b-user-form
+	&__wrap
+		padding 0 30px 40px
+	&__title-wrap
+		padding 15px 0 8px
+	&__col-wrap
+		font-size 0
+		margin 0 -5px
+		width 880px
+	&__col
+		display inline-block
+		vertical-align bottom
+		padding 0 5px
+		width (100/4)%
+	&__item
+		font-size 14px
+		line-height 25px
+
+.b-user-favorite
+	&__wrap
+		padding 0 30px 40px
+	&__title-wrap
+		padding 15px 0 8px
+	&__col-wrap
+		padding 10px 0
+	&__row
+		padding 30px 0
+		border-bottom 1px solid #e5e5e5
+		// display table
+		// table-layout fixed
+		// width 100%
+		font-size 0
+		&:first-child
+			padding-top 0
+		&:last-child
+			border none
+	&__col
+		// display table-cell
+		display inline-block
+		width (100/4)%
+		vertical-align top
+		padding 0 40px
+		font-size 14px
+		border-right 1px solid #e5e5e5
+		&:last-child
+			border none
+
+.b-user-histry
+	&__wrap
+		padding 0 30px 40px
+	&__title-wrap
+		padding 15px 0 8px
+	&__row
+		padding 28px 0
+		border-top 1px solid #e5e5e5
+		&:first-child
+			padding-top 0
+			border none
+		&:last-child
+			border none
+			padding 0
+	&__content
+		padding 8px 0
+
+.b-history-item
+	&__top
+		padding-bottom 8px
+	&__title
+		color $black
+		font-size 16px
+		font-family 'Gotham Pro'
+		font-weight 700
+	&__item, &__bottom
+		display table
+		table-layout fixed
+		width 100%
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align middle
+	&__right
+		text-align right
+		width 230px
+	&__items
+		padding 10px 0
+	&__item
+		padding-bottom 5px
+	&__small-text, &__text
+		display block
+		color $lightGray
+		font-size 14px
+	&__info
+		padding-bottom 5px
+	&__small-text
+		padding-bottom 3px
+	&__img, &__link
+		display inline-block
+		vertical-align middle
+		margin-right 10px
+	&__link
+		color $black
+		font-size 14px
+		font-family 'Gotham Pro'
+		font-weight 500
+		text-decoration none
+
+.b-show-all
+	background-color #ededed
+	padding 0 7px
+	border-radius 3px
+	text-transform uppercase
+	text-decoration none
+	color $gray
+	font-size 11px
+	line-height 26px
+	height 26px
+	display inline-block
+	font-family 'Gotham Pro'
+	font-weight 400
+
+.b-about-box
+	border-bottom 1px solid #e5e5e5
+	&__title-wrap
+		padding-bottom 25px
+	&__item
+		display inline-block
+		vertical-align middle
+		margin-right 10px
+	&__wrap
+		display table
+		width 100%
+		table-layout fixed
+		padding 46px 59px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		padding-right 70px
+	&__right
+		width 345px
+	&__desc
+		p
+			font-size 14px
+			line-height 21px
+
+.b-newsletter
+	&__title-wrap
+		border-bottom 1px solid #e5e5e5
+		margin-bottom 21px
+		padding-bottom 22px
+	&__small-text
+		color $lightGray
+		padding-bottom 14px
+		display block
+
+.b-form-newsletter
+	position relative
+	border 1px solid #e2e2e2
+	border-radius 3px
+	padding-right 30px
+	.b-input
+		font-style italic
+		placeholder(#d1d1d1)
+		border none
+		border-right 1px solid #e2e2e2
+	&__btn
+		position absolute
+		top 10px
+		right 7px
+		display block
+		border none
+		background-color transparent
+		sprite($s-arr-newsletter)
+
+.b-news-box
+	&__title-wrap
+		padding-bottom 31px
+		display block
+	&__wrap
+		padding-bottom 40px
+		margin-top 49px
+		margin-left 60px
+	&__item
+		display inline-block
+		vertical-align middle
+		margin-right 10px
+	&__tabl-wrap
+		display table
+		width 100%
+		table-layout fixed
+	&__left, &__right
+		display table-cell
+		vertical-align top
+		width (100/2)%
+	&__left
+		padding-right 45px
+
+.b-recent-articles
+	&__row
+		border-bottom 1px solid #e2e2e2
+		padding 15px 0
+		&:first-child
+			border-top 1px solid #e2e2e2
+	&__date
+		color $lightGray
+		font-size 12px
+		display table-cell
+		width 76px
+		&:after
+			content '\2014'
+			display inline-block
+			margin 0 3px
+	&__link
+		color $black
+		font-size 15px
+		font-family 'Gotham Pro'
+		font-weight 500
+		text-decoration none
+		line-height 18px
+		padding-right 35px
+		display table-cell
+
+.b-remove
+	color $lightGray
+	font-size 14px
+	font-style italic
+	text-decoration none
+	display inline-block
+	padding-left 20px
+	position relative
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 0
+		margin-top -6px
+		sprite($s-close)
+
+.b-price
+	color $black
+	font-size 24px
+	font-family 'Gotham Pro'
+	font-weight 900
+	display block
+	sup
+		font-size 13px
+	&_icon
+		&:before
+			content ''
+			display inline-block
+			vertical-align middle
+			margin-right 5px
+			position relative
+			top -1px
+			sprite($s-flag-empty)
+		&_act
+			&:before
+				sprite($s-flag-full)
+
+.b-btn
+	color $black
+	text-decoration none
+	border-radius 4px
+	border none
+	text-transform uppercase
+	font-size 12px
+	font-family 'Gotham Pro'
+	font-weight 700
+	display inline-block
+	padding 0 10px
+	line-height 30px
+	height 30px
+	&_gray
+		background-color #dbdbdb
+		&:hover
+			background-color darken(#dbdbdb, 2)
+	&_yellow
+		background-color $yellow
+		&:hover
+			background-color darken($yellow, 2)
+	&_hlv
+		background-color rgba(255,255,255,.1)
+		border 1px solid $white
+		color $white
+	&_arr
+		padding-right 25px
+		position relative
+		&:after
+			content ''
+			position absolute
+			top 50%
+			right 10px
+			margin-top -7px
+			sprite($s-arr-btn-r)
+
+.js-tabs
+	&__item
+		display none
+		&.active
+			display block
+
+.p-catalog-5-11
+	background-image none

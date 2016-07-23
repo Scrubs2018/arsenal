@@ -1,0 +1,148 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title catalog category
+		include inc/head
+	body(class="p-catalog-category")
+		include partials/header
+
+		.b-box
+			.b-common-wrap
+				+b('section').content
+					+e('').left
+						+b('form').filters
+							+e('').item
+								+b('nav').filters-menu
+									+e('').item._active
+										+e('span').link Вся одежда
+										+e('span').num 670
+									+e('').item
+										+b('nav').filters-menu-a
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link._active Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 67
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Вся одежда
+												+e('span').num 670
+									+e('').item
+										+e('a')(href="#").link Сувениры, атрибутика
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Обувь
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Экипировка
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Фонари, светильники
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Оптические приборы
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Посуда
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Ножи, инструмент
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Сумки, рюкзаки, бум..
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Туристическое снар..
+										+e('span').num 360
+									+e('').item._active-a
+										+e('a')(href="#").link 5.11 Tactical
+										+e('span').num 306
+									+e('').item
+										+b('nav').filters-menu-a
+											+e('').item
+												+e('a')(href="#").link Спецкостюмы
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Спецкостюмы
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Спецкостюмы
+												+e('span').num 670
+											+e('').item
+												+e('a')(href="#").link Спецкостюмы
+												+e('span').num 670
+					+e('').right
+						+b('').cat-category
+							+e('').wrap
+								+e('').title-wrap
+									+b('span').title Одежда
+								+e('').col-wrap
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+									+e('').col
+										+cat-category-item
+						+b('').bottom-text
+							+e('').wrap
+								+e('').title-wrap
+									+b('span').title Одежда в каталоге "Арсенал-БЛ"
+								+e('').text
+									p Наша деятельность - розничная и оптовая торговля различными товарами в стиле милитари, которые пригодятся гражданскому человеку во время отдыха на природе (одежда, обувь, рюкзаки, палатки, спальные мешки, фонари, котелки, фляги, лопатки и т.д.), и товарами милитарного стиля для военных, охотников, рыболовов, охраны, страйкбола, туристов и людей активоного образа жизни. Основной акцент нашей компании это стиль MILITARY.  Стиль "милитари" появился и громко заявил о себе после окончания первой мировой войны. Это было вызвано рядом причин: разрушенной структурой производства гражданской одежды и, напротив, отлаженной военной; желанием военных подчеркнуть свой статус победителя и культом новой мужской красоты у подрастающего поколения; ущербностью и устарелостью разработок довоенной моды в сравнении с потрясающими эргономическими характеристиками солдатской формы. В основе товаров милитарного стиля лежит использование специфических материалов, тканей, кроя, технологий проверенных временем! Наш основной акцент – надежно и практично!
+
+			include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

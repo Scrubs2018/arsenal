@@ -1,0 +1,77 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title contacts
+		include inc/head
+	body(class="p-contacts")
+		include partials/header
+
+		.b-box
+			.b-common-wrap
+				+b('section').contacts
+					.b-container
+						+e('').wrap
+							+e('').left
+								+e('').title-wrap
+									+b('span').title Контактная информация
+								+b('').contacts-info
+									+e('').item._address
+										+e('span').label Адрес:
+										+e('span').text г. Минск, ул. Притыцкого, 2/1
+									+e('').item._phone
+										+e('span').label Городской Телефон:
+										+e('span').text 
+											a(href="tel:+375172027888") +375 17 202 78 88
+									+e('').item._mobil
+										+e('span').label Мобильный телефон:
+										+e('span').text 
+											a(href="tel:+375293195808") +375 29 319 58 08
+									+e('').item._mail
+										+e('span').label Электронная почта:
+										+e('span').text <a href="http://magazin@arsenal-bl.by">magazin@arsenal-bl.by</a>, <a href="http://sergei@arsenal-bl.by">sergei@arsenal-bl.by</a>
+									+e('').item._clock
+										+e('span').label Режим работы:
+										+e('span').text Пн-Пт: 10.00-19.00, Сб: 10.00-18.00
+							+e('').right
+								+b('').form-contact
+									+e('').top
+										+b('span').title Обратная связь
+									+e('').content
+										+e('').row
+											+e('label').item Ваше имя
+												+b('input')(type="text").input
+										+e('').row
+											+e('label').item Ваш email
+												+b('input')(type="text").input
+										+e('').row
+											+e('label').item Текст сообщения
+												textarea.b-textarea(rows="2")
+									+e('').bottom
+										+b('input')(type="submit" value="Отправить сообщение").btn._yellow
+				+b('section').our-store
+					.b-container
+						+e('').wrap
+							+e('').title-wrap
+								+b('span').title Наш магазин
+							+e('').col-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/301x190").img
+								+e('').col
+									+e('img')(src="http://placehold.it/301x190").img
+								+e('').col
+									+e('img')(src="http://placehold.it/301x190").img
+								+e('').col
+									+e('img')(src="http://placehold.it/301x190").img
+				+b('section').map
+					+e('').map-wrap
+						+e('span').title Мы на карте
+
+			include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

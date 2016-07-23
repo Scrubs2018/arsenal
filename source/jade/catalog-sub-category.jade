@@ -1,0 +1,174 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title catalog sub category
+		include inc/head
+	body(class="p-catalog-sub-category")
+		include partials/header
+
+		.b-box
+			.b-common-wrap
+				+b('section').content
+					+e('').left
+						+b('form').filters
+							+e('').item
+								+b('nav').filters-menu
+									+e('').item
+										+e('a')(href="#").link Вся одежда
+										+e('span').num 670
+									+e('').item._active
+										+e('span').link Куртки
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Обувь
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Экипировка
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Фонари, светильники
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Оптические приборы
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Посуда
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Ножи, инструмент
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Сумки, рюкзаки, бум..
+										+e('span').num 360
+									+e('').item
+										+e('a')(href="#").link Туристическое снар..
+										+e('span').num 360
+							+e('').item
+								+b('nav').filters-menu
+									+e('').item
+										+e('a')(href="#").link 5.11 Tactical
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Обувь
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Экипировка
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Фонари, светильники
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Оптические приборы
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link 5.11 Tactical
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Обувь
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Экипировка
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Фонари, светильники
+										+e('span').num 306
+									+e('').item
+										+e('a')(href="#").link Оптические приборы
+										+e('span').num 306
+					+e('').right
+						+b('').cat-sub-category
+							+e('').wrap
+								+b('').title-box
+									+e('').left
+										+e('').title-wrap
+											+b('span').title Куртки
+									+e('').right
+										+b('').sorting
+											+e('').item
+												+e('a')(href="#").sort._active По цене
+											+e('').item
+												+e('a')(href="#").sort По популярности
+								+e('').content
+									+e('').row
+										+b('').cat-sub-category-item
+											+e('').left
+												+e('').rate-wrap
+													+b('span').rate._gray 4.8
+												+e('img')(src="http://placehold.it/189x189").img
+											+e('').middle
+												+e('').top
+													+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+												+e('').content
+													+e('span').text Rip-stop 100% хлопок
+													+e('span').text Код Продукта: 016041A
+													+e('span').text Цвета: черный, олива, мультикам
+											+e('').right
+												+b('sapn').price._icon._icon 810<sup>000</sup> руб.
+												+e('span').old-price 800 000 руб.
+												+e('').hit-wrap
+													+b('span').discount Товар на скидке
+									+e('').row
+										+b('').cat-sub-category-item
+											+e('').left
+												+e('').rate-wrap
+													+b('span').rate._gray 4.8
+												+e('img')(src="http://placehold.it/189x189").img
+											+e('').middle
+												+e('').top
+													+e('a')(href="#").title Куртка BDU камуфляж "пустыня"
+												+e('').content
+													+e('span').text Rip-stop 100% хлопок
+													+e('span').text Код Продукта: 016041A
+													+e('span').text Цвета: черный, олива, мультикам
+											+e('').right
+												+b('sapn').price._icon._icon_act 810<sup>000</sup> руб.
+												+e('').hit-wrap
+													+b('span').discount Хит продаж
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+									+e('').row
+										+cat-sub-category-item
+								+e('').pagination-wrap
+									+b('').pagination-box
+										+e('').wrap
+											+e('').left
+												+b('a')(href="#").more-items Показать еще 10
+											+e('').right
+												+b('').pagination
+													+e('span').ctrl._prev._inactive
+													+e('a')(href="#").item._active 1
+													+e('a')(href="#").item 2
+													+e('a')(href="#").item 3
+													+e('a')(href="#").item._no-hover ...
+													+e('a')(href="#").item 20
+													+e('a')(href="#").ctrl._next
+						+b('').bottom-text._no-border
+							+e('').wrap
+								+e('').title-wrap
+									+b('span').title Одежда в каталоге "Арсенал-БЛ"
+								+e('').text
+									p Наша деятельность - розничная и оптовая торговля различными товарами в стиле милитари, которые пригодятся гражданскому человеку во время отдыха на природе (одежда, обувь, рюкзаки, палатки, спальные мешки, фонари, котелки, фляги, лопатки и т.д.), и товарами милитарного стиля для военных, охотников, рыболовов, охраны, страйкбола, туристов и людей активоного образа жизни. Основной акцент нашей компании это стиль MILITARY.  Стиль "милитари" появился и громко заявил о себе после окончания первой мировой войны. Это было вызвано рядом причин: разрушенной структурой производства гражданской одежды и, напротив, отлаженной военной; желанием военных подчеркнуть свой статус победителя и культом новой мужской красоты у подрастающего поколения; ущербностью и устарелостью разработок довоенной моды в сравнении с потрясающими эргономическими характеристиками солдатской формы. В основе товаров милитарного стиля лежит использование специфических материалов, тканей, кроя, технологий проверенных временем! Наш основной акцент – надежно и практично!
+
+			include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")
